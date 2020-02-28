@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "project": {
+    "name": "<PROJECT_NAME_HERE>"
+  },
+  "api": {
+    "projectId": "<PROJECT_ID_HERE>",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.js"
+    }
+  ]
+}

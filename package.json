@@ -1,0 +1,32 @@
+{
+  "name": "sane-eleventy",
+  "version": "0.0.1",
+  "repository": "https://github.com/selfawarestudio/sane-eleventy.git",
+  "author": "mikehwagz <mike@selfaware.studio>",
+  "license": "NONE",
+  "private": true,
+  "scripts": {
+    "start:studio": "yarn workspace studio start",
+    "test:studio": "yarn workspace studio test",
+    "deploy:studio": "yarn workspace studio deploy",
+    "build": "yarn workspace web build",
+    "start": "yarn workspace web start"
+  },
+  "workspaces": [
+    "studio",
+    "web"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.1.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
