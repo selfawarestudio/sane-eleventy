@@ -1,4 +1,4 @@
 node_modules
 .DS_Store
 build
-web/src/templates/includes/manifest.json
+web/src/templates/includes/_manifest.json

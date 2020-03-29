@@ -1,7 +1,10 @@
 import { picoapp } from 'picoapp'
+import { size } from '@selfaware/martha'
 
 const components = {}
 
-const state = {}
+const state = {
+  ...size(),
+}
 
 export default picoapp(components, state)

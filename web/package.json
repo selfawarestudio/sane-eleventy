@@ -8,18 +8,19 @@
   "scripts": {
     "clean": "rimraf ./build",
     "serve": "browser-sync build -w --no-notify",
-    "build": "cross-env NODE_ENV=production ELEVENTY_ENV=production run-s clean build:*",
+    "build": "cross-env NODE_ENV=production run-s clean build:*",
     "build:webpack": "webpack",
     "build:eleventy": "eleventy --quiet",
-    "start": "cross-env NODE_ENV=development ELEVENTY_ENV=development npm-run-all clean build:webpack --parallel start:* serve",
+    "start": "cross-env NODE_ENV=development npm-run-all clean build:webpack --parallel start:* serve",
     "start:webpack": "webpack -w",
     "start:eleventy": "eleventy --quiet --watch"
   },
   "dependencies": {
     "@dogstudio/highway": "^2.1.3",
+    "@selfaware/martha": "^0.0.3",
     "@selfaware/wool": "^0.2.1",
     "choozy": "^0.0.6",
-    "focus-visible": "^5.0.2",
+    "gsap": "^3.2.5",
     "picoapp": "^3.5.0"
   },
   "devDependencies": {
@@ -30,6 +31,7 @@
     "@babel/plugin-transform-template-literals": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@sanity/client": "^0.147.3",
+    "@sanity/image-url": "^0.140.17",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
@@ -41,6 +43,7 @@
     "glob": "^7.1.6",
     "groq": "^1.149.0",
     "mini-css-extract-plugin": "^0.9.0",
+    "nanoclass": "^0.0.2",
     "node-sass-glob-importer": "^5.3.2",
     "npm-run-all": "^4.1.5",
     "path": "^0.12.7",
@@ -55,5 +58,6 @@
     "webpack-cli": "^3.3.11",
     "webpack-fix-style-only-entries": "^0.4.0",
     "webpack-manifest-plugin": "^2.2.0"
-  }
+  },
+  "sideEffects": false
 }

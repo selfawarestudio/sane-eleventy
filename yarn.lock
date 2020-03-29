@@ -1241,6 +1241,11 @@
   version "0.140.15"
   resolved "https://registry.npmjs.org/@sanity/image-url/-/image-url-0.140.15.tgz#7b8afc49130398e1a6e7bde03b5961d2384f7676"
 
+"@sanity/image-url@^0.140.17":
+  version "0.140.17"
+  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-0.140.17.tgz#fa4feecab1441fde6e95766b4bf721ca1a842872"
+  integrity sha512-RWyrTXmdDwujYZ2Rpd7eqKTfbr+rAcZ6zWlCqEtGG0mQwV/O22AoiL++lKq6YHsOn/etl6CsqrQAsEQNMF4r1A==
+
 "@sanity/imagetool@0.147.0":
   version "0.147.0"
   resolved "https://registry.npmjs.org/@sanity/imagetool/-/imagetool-0.147.0.tgz#196d230206204610b9d2be2cfad90fbfae762828"
@@ -1467,6 +1472,11 @@
     "@sanity/resolver" "0.147.0"
     "@sanity/util" "0.147.0"
     loader-utils "1.1.0"
+
+"@selfaware/martha@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@selfaware/martha/-/martha-0.0.3.tgz#3b8ff36992a68ff13b66f034ad9b9c9592f38a31"
+  integrity sha512-xgNM10eIH8jVEWPreD+KXUJHDjrzlCjIldwB2v0oD0gBpFzhFrN9wjhRbmxVeLP8rBWmZgCzNLIFHf2ddeLgsA==
 
 "@selfaware/wool@^0.2.1":
   version "0.2.1"
@@ -4691,11 +4701,6 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-focus-visible@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/focus-visible/-/focus-visible-5.0.2.tgz#4fae9cf40458b73c10701c9774c462e3ccd53caf"
-  integrity sha512-zT2fj/bmOgEBjqGbURGlowTmCwsIs3bRDMr/sFZz8Ly7VkEiwuCn9swNTL3pPuf8Oua2de7CLuKdnuNajWdDsQ==
-
 follow-redirects@1.5.10:
   version "1.5.10"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
@@ -5086,6 +5091,11 @@ groq@^1.149.0:
   version "1.149.0"
   resolved "https://registry.yarnpkg.com/groq/-/groq-1.149.0.tgz#a9b0ee8302a0a8fadcc021ee584d0b906b025f1e"
   integrity sha512-Xam21k48sP9z50QVgM+i9tMCGbQ2vjfYvjx/pctpdrq0rYWbRfeBkcYF6Kt0j/SFKT4hoZuwUGUKbZPUVWu2pQ==
+
+gsap@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.2.5.tgz#4e4841e8c219b06d0d0d54c1c09c0681e2351c0a"
+  integrity sha512-3D5YZFnuoTj8hkMREadLq4+joYIGk+XE7DUVzWRu5ErtyfrDqRNDKFLMvJBsZP1u8VlMpcqFXmPBCZjKjOUbQw==
 
 gud@^1.0.0:
   version "1.0.0"
@@ -7001,6 +7011,11 @@ nan@^2.12.1:
 nano-pubsub@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/nano-pubsub/-/nano-pubsub-1.0.2.tgz#34ce776f7af959915b8f7acfe8dd6b9c66f3bde9"
+
+nanoclass@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/nanoclass/-/nanoclass-0.0.2.tgz#ace3ff9f746f4a0e632760d4531d01b832c1a09b"
+  integrity sha512-2xku8GgTJeBpcQQNOynygfDcV6H85vKwC8w4UI1u6oeujJA3YER0ji1xg6hCL9STiGhASUmHOL9r70YcDsJb5w==
 
 nanomatch@^1.2.9:
   version "1.2.13"
