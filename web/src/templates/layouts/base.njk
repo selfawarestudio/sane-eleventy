@@ -1,78 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-black">
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>sane-eleventy</title>
-    {# <title>{{ config.seo.title }}</title> #}
-
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="preload" href="{% webpackAsset 'style.css' %}" as="style">
-    <link rel="preload" href="{% webpackAsset 'main.js' %}" as="script">
-
-    {# Global site tag (gtag.js) - Google Analytics #}
-    {# <script async src="https://www.googletagmanager.com/gtag/js?id=GTAG_ID_HERE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GTAG_ID_HERE');
-    </script> #}
-    
-    {# <meta name="description" content="{{ config.seo.description }}"> #}
-
-    {# Facebook Open Graph #}
-    {# <meta property="og:url" content="{{ config.seo.url }}">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ config.seo.title }}">
-    <meta property="og:description" content="{{ config.seo.description }}">
-    <meta property="og:site_name" content="{{ config.seo.title }}">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="{{ config.seo.image.url }}">
-    <meta property="og:image:width" content="{{ config.seo.image.width }}">
-    <meta property="og:image:height" content="{{ config.seo.image.height }}"> #}
-
-    {# Twitter Card #}
-    {# <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="{{ config.seo.url }}">
-    <meta name="twitter:title" content="{{ config.seo.title }}">
-    <meta name="twitter:description" content="{{ config.seo.description }}">
-    <meta name="twitter:image" content="{{ config.seo.image.url }}"> #}
-
-    {# Favicons #}
-    {# <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/icons/site.webmanifest">
-    <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#652d30">
-    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#fffcf5">
-    <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
-    <meta name="theme-color" content="#fffcf5"> #}
-
-    <link rel="stylesheet" href="{% webpackAsset 'style.css' %}">
+    {% include 'head.njk' %}
   </head>
+
   <body class="bg-white sans f18">
-    
-    {% if env !== 'production' %}
-      <script async="" src="/browser-sync/browser-sync-client.js?v=2.26.7"></script>
-    {% endif %}
 
     <div id="root">
-      <header class="f jcb p10 bb bw1 f18">
-        <a href="/" class="dib p5 ttu fw700">Sane Eleventy</a>
-        <nav>
-          <a class="dib p5" href="/">Home</a>
-          <a class="dib p5" href="/about/">About</a>
-        </nav>
-      </header>
+
+      {% include 'header.njk' %}
+
       <main class="pt50" data-router-wrapper>
         {{ content | safe }}
       </main>
+
     </div>
 
     <script src="{% webpackAsset 'main.js' %}"></script>
+
   </body>
 </html>

@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ title }} — SANE ELEVENTY</title>
+{# <title>{{ config.seo.title }}</title> #}
+
+{# Preconnect to Google Tag Manager #}
+<link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com" crossorigin>
+
+{# Preload styles #}
+<link rel="preload" href="{% webpackAsset 'style.css' %}" as="style">
+
+{# Preload fonts #}
+{# <link rel="preload" href="/Cambon-Demi.woff2" as="font" type="font/woff2" crossorigin> #}
+
+{# Preload scripts #}
+<link rel="preload" href="{% webpackAsset 'main.js' %}" as="script">
+
+{# Global site tag (gtag.js) - Google Analytics #}
+{# <script async src="https://www.googletagmanager.com/gtag/js?id=GTAG_ID_HERE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GTAG_ID_HERE');
+</script> #}
+
+{# <meta name="description" content="{{ config.seo.description }}"> #}
+
+{# Facebook Open Graph #}
+{# <meta property="og:url" content="{{ config.seo.url }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ config.seo.title }}">
+<meta property="og:description" content="{{ config.seo.description }}">
+<meta property="og:site_name" content="{{ config.seo.title }}">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="{{ config.seo.image.url }}">
+<meta property="og:image:secure_url" content="{{ config.seo.image.url }}">
+<meta property="og:image:alt" content="{{ config.seo.image.altText }}">
+<meta property="og:image:width" content="{{ config.seo.image.width }}">
+<meta property="og:image:height" content="{{ config.seo.image.height }}"> #}
+
+{# Twitter Card #}
+{# <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ config.seo.url }}">
+<meta name="twitter:title" content="{{ config.seo.title }}">
+<meta name="twitter:description" content="{{ config.seo.description }}">
+<meta name="twitter:image" content="{{ config.seo.image.url }}">
+<meta name="twitter:image:alt" content="{{ config.seo.image.altText }}"> #}
+
+{# Favicons #}
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤠</text></svg>">
+
+{# Link stylesheet #}
+<link rel="stylesheet" href="{% webpackAsset 'style.css' %}">
+
+{# If browser-sync stops reloading, try uncommenting the below #}
+{# {% if env !== 'production' %}
+  <script async="" src="/browser-sync/browser-sync-client.js?v=2.26.7"></script>
+{% endif %} #}
