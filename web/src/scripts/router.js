@@ -1,4 +1,4 @@
-import Highway from '@dogstudio/highway'
+import Highway from '@/lib/highway'
 import instant from '@/transitions/instant'
 
 export default new Highway.Core({

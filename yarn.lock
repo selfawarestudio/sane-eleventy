@@ -878,13 +878,6 @@
   dependencies:
     find-up "^4.0.0"
 
-"@dogstudio/highway@^2.1.3":
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/@dogstudio/highway/-/highway-2.1.3.tgz#c67193118aec417fc9bbf1925890fe75a249c97a"
-  integrity sha512-yf2vhsyd7ew0h6tjrCZd0fMYBYPpPNR1Dy0it0UkvWiYq/ZIziAgtUlqrar6TlElb5BuwIus0H4lrETZqA1fHg==
-  dependencies:
-    tiny-emitter "^2.1.0"
-
 "@hot-loader/react-dom@^16.9.0-4.12.11":
   version "16.11.0"
   resolved "https://registry.npmjs.org/@hot-loader/react-dom/-/react-dom-16.11.0.tgz#c0b483923b289db5431516f56ee2a69448ebf9bd"
@@ -10703,11 +10696,6 @@ timers-browserify@^2.0.4:
 timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
-
-tiny-emitter@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
-  integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
 
 tiny-invariant@^1.0.1, tiny-invariant@^1.0.2:
   version "1.0.6"
