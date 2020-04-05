@@ -1521,9 +1521,10 @@
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@selfaware/martha/-/martha-0.0.3.tgz#3b8ff36992a68ff13b66f034ad9b9c9592f38a31"
 
-"@selfaware/wool@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@selfaware/wool/-/wool-0.2.1.tgz#05f5939f6fa888065ccb22335d6bed33cf35cdbd"
+"@selfaware/wool@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@selfaware/wool/-/wool-1.0.3.tgz#77b7633fd7106dfce3a1e02782df08670a82d649"
+  integrity sha512-bq93IufRCwAl3aWGLYcF+L1IfpCjsctrzKHfNWC4SqJIjacZrQd5hzYnP5IiWKgYgH+FRZu3XaNw+tCNyiKTiw==
 
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.7"
@@ -4291,9 +4292,10 @@ evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
     md5.js "^1.3.4"
     safe-buffer "^5.1.1"
 
-evx@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/evx/-/evx-1.0.1.tgz#583030030b903668df0bfda1dcbbd9261089d76c"
+evx@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/evx/-/evx-1.1.0.tgz#2c006def096d44c2548bede0e7c3613aefad238a"
+  integrity sha512-TTMrLWzXmxOsxmGpdIfru5g1NJ0c59CKes6zqjtwG2qtgYah/of7ADTIts53wO+M0BfWPWFCJmDn1fO2+i6svQ==
 
 execa@^0.7.0:
   version "0.7.0"
@@ -7603,20 +7605,16 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
-picoapp@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/picoapp/-/picoapp-3.5.0.tgz#8a467025d0001b7be72df5bd1eb48967e5359531"
+picoapp@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/picoapp/-/picoapp-3.6.1.tgz#6bd8b2438880b81314fdb0bc00b007cef465ca63"
+  integrity sha512-IS/B0wcIgp3IKoAoAdl8p3fa+Sj2FKWGBR64DiAz1TTdOjJpHE7CjJ7QQlgkgTitAV2tyLRNgbCSCdyf/wAuGw==
   dependencies:
-    evx "^1.0.1"
-    picostate "^1.4.0"
+    evx "^1.1.0"
 
 picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.0.7:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.1.tgz#21bac888b6ed8601f831ce7816e335bc779f0a4a"
-
-picostate@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/picostate/-/picostate-1.4.0.tgz#32cf6fa67195fe53964788bc45ea4276ed229269"
 
 pidtree@^0.3.0:
   version "0.3.0"

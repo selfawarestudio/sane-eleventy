@@ -17,10 +17,10 @@
   },
   "dependencies": {
     "@selfaware/martha": "^0.0.3",
-    "@selfaware/wool": "^0.2.1",
+    "@selfaware/wool": "^1.0.3",
     "choozy": "^0.0.6",
     "gsap": "^3.2.5",
-    "picoapp": "^3.5.0"
+    "picoapp": "^3.6.1"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
