@@ -16,6 +16,7 @@
     "start:eleventy": "eleventy --quiet --watch"
   },
   "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
     "@selfaware/martha": "^0.0.3",
     "@selfaware/wool": "^1.0.3",
     "choozy": "^0.0.6",
@@ -33,6 +34,7 @@
     "@sanity/image-url": "^0.140.17",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
+    "babel-plugin-transform-async-to-promises": "^0.8.15",
     "browser-sync": "^2.26.7",
     "cross-env": "^6.0.3",
     "css-loader": "^3.4.2",

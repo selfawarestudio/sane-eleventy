@@ -1,4 +1,4 @@
-import Highway from '@/lib/highway'
+import Highway from '@dogstudio/highway'
 
 class Instant extends Highway.Transition {
   in({ from, to, done }) {
