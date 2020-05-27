@@ -1,16 +1,16 @@
 import Highway from '@dogstudio/highway'
 
 // renderers
-import base from '@/renderers/base'
+import Base from '@/renderers/Base'
 
 // transitions
-import instant from '@/transitions/instant'
+import Instant from '@/transitions/Instant'
 
 const H = new Highway.Core({
   renderers: {
-    default: base,
+    default: Base,
   },
   transitions: {
-    default: instant,
+    default: Instant,
   },
 })
