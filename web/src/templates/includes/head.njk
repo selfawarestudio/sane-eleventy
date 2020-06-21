@@ -56,6 +56,6 @@
 <link rel="stylesheet" href="{% webpackAsset 'style.css' %}">
 
 {# If browser-sync stops reloading, try uncommenting the below #}
-{# {% if env !== 'production' %}
+{% if env !== 'production' %}
   <script async="" src="/browser-sync/browser-sync-client.js?v=2.26.7"></script>
-{% endif %} #}
+{% endif %}

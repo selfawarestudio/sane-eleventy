@@ -4,13 +4,13 @@ import Highway from '@dogstudio/highway'
 import Base from '@/renderers/Base'
 
 // transitions
-import Instant from '@/transitions/Instant'
+import Fade from '@/transitions/Fade'
 
 const H = new Highway.Core({
   renderers: {
     default: Base,
   },
   transitions: {
-    default: Instant,
+    default: Fade,
   },
 })

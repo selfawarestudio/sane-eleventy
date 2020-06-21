@@ -17,14 +17,16 @@
   },
   "dependencies": {
     "@dogstudio/highway": "^2.2.1",
-    "@selfaware/martha": "^0.0.3",
+    "@selfaware/martha": "^0.0.7",
     "@selfaware/wool": "^1.0.3",
     "choozy": "^0.0.6",
-    "gsap": "^3.2.5",
-    "picoapp": "^3.6.1"
+    "fontfaceobserver": "^2.1.0",
+    "gsap": "^3.3.4",
+    "picoapp": "^3.6.2",
+    "quicklink": "^2.0.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.11.0",
     "@babel/core": "^7.8.3",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
@@ -40,6 +42,7 @@
     "css-loader": "^3.4.2",
     "cssnano": "^4.1.10",
     "cssnano-preset-advanced": "^4.0.7",
+    "fibers": "^5.0.0",
     "file-loader": "^5.1.0",
     "glob": "^7.1.6",
     "groq": "^1.149.0",

@@ -33,3 +33,7 @@ a {
   color: currentColor;
   text-decoration: none;
 }
+
+[data-router-view] {
+  @include hidden;
+}

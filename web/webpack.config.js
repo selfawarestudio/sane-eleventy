@@ -71,6 +71,7 @@ module.exports = {
             options: {
               implementation: require('sass'),
               sassOptions: {
+                fiber: require('fibers'),
                 importer: require('node-sass-glob-importer')(),
               },
             },
