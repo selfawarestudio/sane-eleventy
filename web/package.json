@@ -7,7 +7,7 @@
   "license": "NONE",
   "scripts": {
     "clean": "rimraf ./build",
-    "serve": "browser-sync build -w --no-notify",
+    "serve": "browser-sync build -w --no-notify --no-open",
     "build": "cross-env NODE_ENV=production run-s clean build:*",
     "build:webpack": "webpack",
     "build:eleventy": "eleventy --quiet",

@@ -10,7 +10,8 @@
     "test:studio": "yarn workspace studio test",
     "deploy:studio": "yarn workspace studio deploy",
     "build": "yarn workspace web build",
-    "start": "yarn workspace web start"
+    "start": "yarn workspace web start",
+    "dev": "netlify dev"
   },
   "workspaces": [
     "studio",
@@ -20,6 +21,7 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "husky": "^4.1.0",
+    "netlify-cli": "^2.54.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1"
   },
