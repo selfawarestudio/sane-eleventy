@@ -2,7 +2,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>{{ title }} — SANE ELEVENTY</title>
+<title>SANE ELEVENTY</title>
 {# <title>{{ config.seo.title }}</title> #}
 
 {# Preconnect to Google Tag Manager #}
@@ -17,6 +17,7 @@
 {# Preload scripts #}
 <link rel="preload" href="{% webpackAsset 'main.js' %}" as="script">
 
+{# {% if env === 'production' %} #}
 {# Global site tag (gtag.js) - Google Analytics #}
 {# <script async src="https://www.googletagmanager.com/gtag/js?id=GTAG_ID_HERE"></script>
 <script>
@@ -25,8 +26,10 @@
   gtag('js', new Date());
   gtag('config', 'GTAG_ID_HERE');
 </script> #}
+{# {% endif %} #}
 
-{# <meta name="description" content="{{ config.seo.description }}"> #}
+{# <meta name="description" content="{{ config.seo.description }}">
+<meta name="keywords" content="{{ config.seo.keywords | join(', ') }}" /> #}
 
 {# Facebook Open Graph #}
 {# <meta property="og:url" content="{{ config.seo.url }}">
@@ -37,9 +40,9 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="{{ config.seo.image.url }}">
 <meta property="og:image:secure_url" content="{{ config.seo.image.url }}">
-<meta property="og:image:alt" content="{{ config.seo.image.altText }}">
-<meta property="og:image:width" content="{{ config.seo.image.width }}">
-<meta property="og:image:height" content="{{ config.seo.image.height }}"> #}
+<meta property="og:image:alt" content="{{ config.seo.image.alt }}">
+<meta property="og:image:width" content="{{ config.seo.image.metadata.dimensions.width }}">
+<meta property="og:image:height" content="{{ config.seo.image.metadata.dimensions.height }}"> #}
 
 {# Twitter Card #}
 {# <meta name="twitter:card" content="summary_large_image">
@@ -47,7 +50,7 @@
 <meta name="twitter:title" content="{{ config.seo.title }}">
 <meta name="twitter:description" content="{{ config.seo.description }}">
 <meta name="twitter:image" content="{{ config.seo.image.url }}">
-<meta name="twitter:image:alt" content="{{ config.seo.image.altText }}"> #}
+<meta name="twitter:image:alt" content="{{ config.seo.image.alt }}"> #}
 
 {# Favicons #}
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤠</text></svg>">
