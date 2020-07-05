@@ -2216,10 +2216,10 @@
     "@sanity/util" "1.149.16"
     loader-utils "1.1.0"
 
-"@selfaware/martha@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@selfaware/martha/-/martha-0.0.7.tgz#c34ccba0c9893e6a82699b319057eece661cf7d1"
-  integrity sha512-imPq04wWDnJ3K5B1yFM+iUc+ZYtGAdne5WPqw+q6Kf4TlXaLCppBRqjBdl95mdNkkDXyNH1lyiTReI+PHF9UjA==
+"@selfaware/martha@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@selfaware/martha/-/martha-0.0.11.tgz#3b9ee92dd22001172b96162f9ca415a589d38c78"
+  integrity sha512-8qpcabQgalGI/4foX9FpS2btcQYUKw9QxXh8lnlqFz/O6pRLkyXJOJnZBYsW53amR5i7bum0TXeSKSMVFsRQkg==
 
 "@selfaware/wool@^1.0.3":
   version "1.0.3"
@@ -6968,6 +6968,19 @@ fn.name@1.x.x:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/fn.name/-/fn.name-1.1.0.tgz#26cad8017967aea8731bc42961d04a3d5988accc"
   integrity sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==
+
+focus-trap@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-5.1.0.tgz#64a0bfabd95c382103397dbc96bfef3a3cf8e5ad"
+  integrity sha512-CkB/nrO55069QAUjWFBpX6oc+9V90Qhgpe6fBWApzruMq5gnlh90Oo7iSSDK7pKiV5ugG6OY2AXM5mxcmL3lwQ==
+  dependencies:
+    tabbable "^4.0.0"
+    xtend "^4.0.1"
+
+focus-visible@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/focus-visible/-/focus-visible-5.1.0.tgz#4b9d40143b865f53eafbd93ca66672b3bf9e7b6a"
+  integrity sha512-nPer0rjtzdZ7csVIu233P2cUm/ks/4aVSI+5KUkYrYpgA7ujgC3p6J7FtFU+AIMWwnwYQOB/yeiOITxFeYIXiw==
 
 folder-walker@^3.2.0:
   version "3.2.0"
@@ -15092,6 +15105,11 @@ symbol-tree@^3.2.2:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
+
+tabbable@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-4.0.0.tgz#5bff1d1135df1482cf0f0206434f15eadbeb9261"
+  integrity sha512-H1XoH1URcBOa/rZZWxLxHCtOdVUEev+9vo5YdYhC9tCY4wnybX+VQrCYuy9ubkg69fCBxCONJOSLGfw0DWMffQ==
 
 tapable@^0.2.7:
   version "0.2.9"
