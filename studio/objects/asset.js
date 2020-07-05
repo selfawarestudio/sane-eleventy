@@ -1,6 +1,6 @@
 export default {
   title: 'Image',
-  name: 'a11yImage',
+  name: 'asset',
   type: 'object',
   fields: [
     {
@@ -10,7 +10,7 @@ export default {
     },
     {
       title: 'Alt Text',
-      name: 'altText',
+      name: 'alt',
       type: 'string',
       description:
         'A short description of the image that is important for accessibility and SEO',

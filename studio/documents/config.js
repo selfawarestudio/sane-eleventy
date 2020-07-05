@@ -1,5 +1,5 @@
 export default {
-  title: 'Global Configuration',
+  title: 'Config',
   name: 'config',
   type: 'document',
   fields: [

@@ -7,7 +7,7 @@ export default () =>
     .title('Content')
     .items([
       S.listItem()
-        .title('Configuration')
+        .title('Config')
         .icon(() => <Emoji style={{ fontSize: 30 }} text="🌎" />)
         .child(
           S.editor()

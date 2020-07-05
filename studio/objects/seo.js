@@ -4,23 +4,28 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'title',
       title: 'Title',
+      name: 'title',
       type: 'string',
     },
     {
-      name: 'description',
       title: 'Description',
+      name: 'description',
       type: 'string',
     },
     {
-      name: 'image',
-      title: 'Image',
-      type: 'a11yImage',
+      title: 'URL',
+      name: 'url',
+      type: 'url',
     },
     {
-      name: 'keywords',
+      title: 'Image',
+      name: 'image',
+      type: 'asset',
+    },
+    {
       title: 'Keywords',
+      name: 'keywords',
       type: 'array',
       of: [{ type: 'string' }],
       options: {
