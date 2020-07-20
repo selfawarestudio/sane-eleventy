@@ -11,7 +11,7 @@ const cx = require('nanoclass')
 module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false)
 
-  eleventyConfig.addNunjucksAsyncShortcode('webpackAsset', async (name) => {
+  eleventyConfig.addLiquidShortcode('webpackAsset', async (name) => {
     const manifestData = await readFile(
       path.resolve(__dirname, 'src/templates/includes/_manifest.json'),
     )
