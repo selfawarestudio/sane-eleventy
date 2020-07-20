@@ -4,7 +4,7 @@
     "name": "sane-eleventy"
   },
   "api": {
-    "projectId": "0v76nywm",
+    "projectId": "<MY_PROJECT_ID>",
     "dataset": "production"
   },
   "plugins": [
