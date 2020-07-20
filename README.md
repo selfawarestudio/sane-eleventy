@@ -1,8 +1,8 @@
 # sane-eleventy ![Prerequisite](https://img.shields.io/badge/node-12.18.2-red.svg) ![Prerequisite](https://img.shields.io/badge/yarn-1.22.4-blue.svg)
 
-> Repo template for Sanity + Eleventy projects at [Self Aware](https://selfaware.studio)
+> Repo template for [Sanity](https://sanity.io) + [Eleventy](https://11ty.dev) projects at [Self Aware](https://selfaware.studio)
 
-## About
+## 📖 About
 
 - Eleventy front-end lives in the `web` directory
 - Templates are authored in the `web/src/templates` directory using any template language supported by eleventy (Liquid by default)
@@ -51,16 +51,14 @@ yarn build
 ```sh
 # Deploy front-end using Netlify CLI
 yarn add netlify-cli -g
-
 netlify init
-
 netlify deploy
 
 # Deploy Sanity Studio
 yarn deploy:studio
 ```
 
-## Showcase
+## 🖼️ Showcase
 
 The following sites are powered by sane-eleventy:
 
@@ -68,10 +66,10 @@ The following sites are powered by sane-eleventy:
 - [MIT Digital Humanities](https://digitalhumanities.mit.edu)
 - More coming soon!
 
-## Inspiration
+## 💡 Inspiration
 
 Thanks to [sane-shopify](https://github.com/good-idea/sane-shopify) for the name inspiration 🙂
 
-## License
+## 🧾 License
 
 MIT
