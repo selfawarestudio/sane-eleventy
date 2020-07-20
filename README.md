@@ -29,6 +29,11 @@ yarn
 
 ## 👩🏻‍💻 Usage
 
+To set up with Sanity, you will need to set your Sanity `projectId` and `dataset` in two places:
+
+1. [`studio/sanity.json`](studio/sanity.json)
+2. [`web/src/util/client.js`](web/src/util/client.js)
+
 ### Development
 
 ```sh
