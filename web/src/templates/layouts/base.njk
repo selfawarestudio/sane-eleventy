@@ -2,17 +2,17 @@
 <html lang="en">
 
   <head>
-    {% include head %}
+    {% include 'head.njk' %}
   </head>
 
   <body class="sans f18">
 
     <div id="root">
 
-      {% include header %}
+      {% include 'header.njk' %}
 
       <main data-router-wrapper>
-        {{ content }}
+        {{ content | safe }}
       </main>
 
     </div>
