@@ -21,7 +21,7 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "husky": "^4.1.0",
-    "netlify-cli": "^2.54.0",
+    "netlify-cli": "^2.59.3",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1"
   },
