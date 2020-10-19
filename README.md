@@ -7,7 +7,7 @@
 - Eleventy front-end lives in the [`web`](web) directory
 - Templates are authored in the [`web/src/templates`](web/src/templates) directory using any template language supported by eleventy (Nunjucks by default)
 - Eleventy global data files live in [`web/src/data`](web/src/data).
-- Styles are authored using Sass and live in [`web/src/styles`](web/src/styles). Our utility-first styling library, [wool](https://github.com/selfawarestudio/wool) is included by default and can be configured via [`web/src/styles/_config.scss`](web/src/styles/_config.scss)
+- Styles are authored using Sass and live in [`web/src/styles`](web/src/styles).
 - JavaScript lives in [`web/src/scripts`](web/src/scripts)
 - Place font and favicon files in their respective folders in [`web/src/assets`](web/src/assets).
 - Netlify serverless functions are authored in [`web/src/functions`](web/src/functions)

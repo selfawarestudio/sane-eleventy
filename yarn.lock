@@ -2291,16 +2291,6 @@
     "@sanity/util" "1.149.16"
     loader-utils "1.1.0"
 
-"@selfaware/martha@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@selfaware/martha/-/martha-0.0.11.tgz#3b9ee92dd22001172b96162f9ca415a589d38c78"
-  integrity sha512-8qpcabQgalGI/4foX9FpS2btcQYUKw9QxXh8lnlqFz/O6pRLkyXJOJnZBYsW53amR5i7bum0TXeSKSMVFsRQkg==
-
-"@selfaware/wool@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@selfaware/wool/-/wool-1.0.3.tgz#77b7633fd7106dfce3a1e02782df08670a82d649"
-  integrity sha512-bq93IufRCwAl3aWGLYcF+L1IfpCjsctrzKHfNWC4SqJIjacZrQd5hzYnP5IiWKgYgH+FRZu3XaNw+tCNyiKTiw==
-
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -4224,11 +4214,6 @@ chokidar@^2.0.3, chokidar@^2.0.4, chokidar@^2.1.8:
     upath "^1.1.1"
   optionalDependencies:
     fsevents "^1.2.7"
-
-choozy@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/choozy/-/choozy-0.0.6.tgz#df66a6b018d0cbcd92105b0f247bb6462fd7d7fd"
-  integrity sha512-rAfp2NYPC56LbWvYZZ2RZGuvjbaT5gFwHguuw7Qmo/JOMAv6JfwP76y/hJmOHptEGfs8NAoX1Vt1g1jiuAc3XA==
 
 chownr@^1.0.1, chownr@^1.1.1:
   version "1.1.4"
@@ -6508,11 +6493,6 @@ evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
     md5.js "^1.3.4"
     safe-buffer "^5.1.1"
 
-evx@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/evx/-/evx-1.1.1.tgz#c43216d0c3849f77e3737c80982937d99d2a7785"
-  integrity sha512-EnQY5Auqs7Vw/chNmCq+myBUVneB0EhS4tW3Pce3V0hilPx7YiSQhJUBrjllvscVQfi3oPy7we26zDZSIlmDBA==
-
 execa@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/execa/-/execa-0.7.0.tgz#944becd34cc41ee32a63a9faf27ad5a65fc59777"
@@ -7089,19 +7069,6 @@ fn.name@1.x.x:
   resolved "https://registry.yarnpkg.com/fn.name/-/fn.name-1.1.0.tgz#26cad8017967aea8731bc42961d04a3d5988accc"
   integrity sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==
 
-focus-trap@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-5.1.0.tgz#64a0bfabd95c382103397dbc96bfef3a3cf8e5ad"
-  integrity sha512-CkB/nrO55069QAUjWFBpX6oc+9V90Qhgpe6fBWApzruMq5gnlh90Oo7iSSDK7pKiV5ugG6OY2AXM5mxcmL3lwQ==
-  dependencies:
-    tabbable "^4.0.0"
-    xtend "^4.0.1"
-
-focus-visible@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/focus-visible/-/focus-visible-5.1.0.tgz#4b9d40143b865f53eafbd93ca66672b3bf9e7b6a"
-  integrity sha512-nPer0rjtzdZ7csVIu233P2cUm/ks/4aVSI+5KUkYrYpgA7ujgC3p6J7FtFU+AIMWwnwYQOB/yeiOITxFeYIXiw==
-
 folder-walker@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/folder-walker/-/folder-walker-3.2.0.tgz#98e00e59773f43416a6dcf0926d4c9436f65121d"
@@ -7120,11 +7087,6 @@ follow-redirects@^1.0.0, follow-redirects@^1.2.4:
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.12.1.tgz#de54a6205311b93d60398ebc01cf7015682312b6"
   integrity sha512-tmRv0AVuR7ZyouUHLeNSiO6pqulF7dYa3s19c6t+wz9LD69/uSzdMxJ2S91nTI9U3rt/IldxpzMOFejp6f0hjg==
-
-fontfaceobserver@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/fontfaceobserver/-/fontfaceobserver-2.1.0.tgz#e2705d293e2c585a6531c2a722905657317a2991"
-  integrity sha512-ReOsO2F66jUa0jmv2nlM/s1MiutJx/srhAe2+TE8dJCMi02ZZOcCTxTCQFr3Yet+uODUtnr4Mewg+tNQ+4V1Ng==
 
 for-in@^0.1.3:
   version "0.1.8"
@@ -11779,13 +11741,6 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-picoapp@^3.6.2:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/picoapp/-/picoapp-3.6.2.tgz#55d6f18c0daab81a3782dcfe4f4fa4811748c2f9"
-  integrity sha512-T9s2IQIzK/gqyDkmRhDs4XH0VmT/2fIJNcTPgN2onoBr7b01ArbPRVjHyORmFCJj6waxHciMkBQF3ybCeznCFA==
-  dependencies:
-    evx "^1.1.1"
-
 picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
@@ -15284,11 +15239,6 @@ symbol-tree@^3.2.2:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
-
-tabbable@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-4.0.0.tgz#5bff1d1135df1482cf0f0206434f15eadbeb9261"
-  integrity sha512-H1XoH1URcBOa/rZZWxLxHCtOdVUEev+9vo5YdYhC9tCY4wnybX+VQrCYuy9ubkg69fCBxCONJOSLGfw0DWMffQ==
 
 tapable@^0.2.7:
   version "0.2.9"

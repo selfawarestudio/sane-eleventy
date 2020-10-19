@@ -17,14 +17,7 @@
   },
   "dependencies": {
     "@dogstudio/highway": "^2.2.1",
-    "@selfaware/martha": "^0.0.11",
-    "@selfaware/wool": "^1.0.3",
-    "choozy": "^0.0.6",
-    "focus-trap": "^5.1.0",
-    "focus-visible": "^5.1.0",
-    "fontfaceobserver": "^2.1.0",
     "gsap": "^3.3.4",
-    "picoapp": "^3.6.2",
     "quicklink": "^2.0.0"
   },
   "devDependencies": {
