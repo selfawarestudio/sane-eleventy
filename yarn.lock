@@ -7702,10 +7702,10 @@ groq@^1.149.0:
   resolved "https://registry.yarnpkg.com/groq/-/groq-1.149.16.tgz#dd889e287fa97ff4160dd96a9d8bb332e7aba8f6"
   integrity sha512-+3HQr0I3FtKzeSIlfHqhUJLFPFdsDNwqIVS28IBaCPF7FeGBVUBTGqtiEd8QQjVEK3PlZTxEtfy6A/nOAevb3Q==
 
-gsap@^3.3.4:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.3.4.tgz#759b9ecba1d21ad243f0d09900f29c4773b8cb32"
-  integrity sha512-qqrPsuh1eNN+Qtvux8f+UExXtd5N+TFhqyPlUX5PBwwDdig9CUxi50dYzUpSKkOczOmmiLMBiwoywPok1iOlDw==
+gsap@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.6.0.tgz#925f25370c698ce0f6ea563522da8f6b5ed21b0a"
+  integrity sha512-0P3syv1TmYr+A/VZ8UMFzw+s0XoaKSzzDFs8NqkXiJTXI4E/VTi0zRjPgxaPBpiUPPycgRnFjLDe0Tb4dRRf+w==
 
 gud@^1.0.0:
   version "1.0.0"

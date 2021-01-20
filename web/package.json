@@ -23,7 +23,7 @@
     "focus-trap": "^5.1.0",
     "focus-visible": "^5.1.0",
     "fontfaceobserver": "^2.1.0",
-    "gsap": "^3.3.4",
+    "gsap": "^3.6.0",
     "picoapp": "^3.6.2",
     "quicklink": "^2.0.0"
   },
