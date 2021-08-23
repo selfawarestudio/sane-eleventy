@@ -23,14 +23,5 @@ export default {
       name: 'image',
       type: 'asset',
     },
-    {
-      title: 'Keywords',
-      name: 'keywords',
-      type: 'array',
-      of: [{ type: 'string' }],
-      options: {
-        layout: 'tags',
-      },
-    },
   ],
 }
