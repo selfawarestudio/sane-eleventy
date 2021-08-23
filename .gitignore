@@ -2,4 +2,3 @@ node_modules
 .DS_Store
 build
 dist
-web/src/templates/includes/_manifest.json

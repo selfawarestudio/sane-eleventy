@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* @font-face {
+    font-family: 'GT Walsheim';
+    src: url('/fonts/GTWalsheim-Regular.woff') format('woff'),
+      url('/fonts/GTWalsheim-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  } */
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  html,
+  body {
+    overscroll-behavior: none;
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    font-size: 1.6rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  [data-router-view] {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

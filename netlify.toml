@@ -1,12 +1,12 @@
 [build]
   command = "yarn build"
-  functions = "web/src/functions"
-  publish = "web/build"
+  functions = "api"
+  publish = "build"
 
 [dev]
   framework = "#custom"
-  command = "yarn start"
-  port = 8888
-  targetPort = 3000
-  publish = "web/build"
+  command = "yarn serve"
+  port = 3000
+  targetPort = 8080
+  publish = "build"
   autoLaunch = true
