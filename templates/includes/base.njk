@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'head.njk' %}
+  </head>
+  <body class="font-sans text-18">
+    {% include 'header.njk' %}
+    <main a-root>
+      {{ content | safe }}
+    </main>
+  </body>
+</html>

@@ -1,21 +1,15 @@
 module.exports = {
-  mode: 'jit',
-  purge: {
-    mode: 'all',
-    preserveHtmlElements: true,
-    content: [
-      './templates/**/*.njk',
-      './scripts/**/*.js',
-      './.eleventy.js',
-      './lib/serializers.js',
-    ],
-  },
-  darkMode: false,
+  content: [
+    './templates/**/*.njk',
+    './scripts/**/*.js',
+    './.eleventy.js',
+    './lib/serializers.js',
+  ],
+  darkMode: 'class',
   theme: {
     fontFamily: {
-      sans: 'sans-serif',
-      serif: 'serif',
-      mono: 'monospace',
+      sans: ['sans-serif'],
+      serif: ['serif'],
     },
     screens: {
       '2xs': '375px',
@@ -27,63 +21,46 @@ module.exports = {
       '2xl': '1536px',
     },
     colors: {
-      white: '#FFF',
-      black: '#000',
+      white: '#ffffff',
+      black: '#000000',
       current: 'currentColor',
       transparent: 'transparent',
     },
-    fontSize: {
-      ...new Array(201)
-        .fill()
-        .map((_, i) => i)
-        .reduce((acc, val) => {
-          acc[val] = `${val / 10}rem`
-          return acc
-        }, {}),
-    },
-    lineHeight: {
-      ...new Array(61)
-        .fill()
-        .map((_, i) => i)
-        .reduce((acc, val) => {
-          acc[100 + val] = (100 + val) / 100
-          return acc
-        }, {}),
-    },
-    spacing: {
-      ...new Array(51)
-        .fill()
-        .map((_, i) => i)
-        .reduce((acc, val) => {
-          acc[val] = `${val / 10}rem`
-          return acc
-        }, {}),
-      ...new Array(50)
-        .fill()
-        .map((_, i) => (11 + i) * 5)
-        .reduce((acc, val) => {
-          acc[val] = `${val / 10}rem`
-          return acc
-        }, {}),
-    },
-    opacity: {
-      ...new Array(21)
-        .fill()
-        .map((_, i) => i * 5)
-        .reduce((acc, val) => {
-          acc[val] = val / 100
-          return acc
-        }, {}),
-    },
-    zIndex: {
-      ...new Array(11)
-        .fill()
-        .map((_, i) => i)
-        .reduce((acc, val) => {
-          acc[val] = val
-          return acc
-        }, {}),
-    },
+    fontSize: new Array(201)
+      .fill()
+      .map((_, i) => i)
+      .reduce((acc, val) => {
+        acc[val] = `${val / 10}rem`
+        return acc
+      }, {}),
+    lineHeight: new Array(161)
+      .fill()
+      .map((_, i) => i)
+      .reduce((acc, val) => {
+        acc[val] = `${val / 100}`
+        return acc
+      }, {}),
+    spacing: new Array(351)
+      .fill()
+      .map((_, i) => i)
+      .reduce((acc, val) => {
+        acc[val] = `${val / 10}rem`
+        return acc
+      }, {}),
+    opacity: new Array(21)
+      .fill()
+      .map((_, i) => i * 5)
+      .reduce((acc, val) => {
+        acc[val] = `${val / 100}`
+        return acc
+      }, {}),
+    zIndex: new Array(11)
+      .fill()
+      .map((_, i) => i)
+      .reduce((acc, val) => {
+        acc[val] = `${val}`
+        return acc
+      }, {}),
     transitionTimingFunction: {
       DEFAULT: 'cubic-bezier(0.23, 1, 0.32, 1)',
       'in-quad': 'cubic-bezier(0.55, 0.085, 0.68, 0.53)',
@@ -111,21 +88,8 @@ module.exports = {
       'in-out-circ': 'cubic-bezier(0.785, 0.135, 0.15, 0.86)',
       'in-out-back': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
     },
-    stroke: (theme) => ({
-      white: theme('colors.white'),
-      black: theme('colors.black'),
-      current: theme('colors.current'),
-      transparent: theme('colors.transparent'),
-    }),
-    fill: (theme) => ({
-      white: theme('colors.white'),
-      black: theme('colors.black'),
-      current: theme('colors.current'),
-      transparent: theme('colors.transparent'),
-    }),
-    extend: {},
-  },
-  variants: {
+    stroke: theme => theme('colors'),
+    fill: theme => theme('colors'),
     extend: {},
   },
   plugins: [],

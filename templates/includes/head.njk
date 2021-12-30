@@ -2,17 +2,19 @@
 <meta content="ie=edge" http-equiv="x-ua-compatible">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<title>Sane Eleventy</title>
+<title>{{ title }} — Sane Eleventy</title>
 {# <title>{{ config.seo.title }}</title> #}
 
+{# <meta name="description" content="{{ config.seo.description }}"> #}
+
 {# Preload styles #}
-<link rel="preload" href="/app.css" as="style">
+{# <link rel="preload" href="./styles/index.css" as="style"> #}
 
 {# Preload fonts #}
 {# <link rel="preload" href="/Cambon-Demi.woff2" as="font" type="font/woff2" crossorigin> #}
 
 {# Preload scripts #}
-<link rel="preload" href="/app.js" as="script">
+{# <link rel="preload" href="./scripts/main.js" as="script"> #}
 
 {# Facebook Open Graph #}
 {# <meta property="og:url" content="{{ config.seo.url }}">
@@ -38,5 +40,5 @@
 {# Favicons #}
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤠</text></svg>">
 
-{# Link stylesheet #}
-<link rel="stylesheet" href="/app.css">
+<script type="module" src="/_site/scripts/main.js"></script>
+<link rel="stylesheet" href="/_site/styles/main.css">

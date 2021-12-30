@@ -1,12 +1,20 @@
 [build]
   command = "yarn build"
   functions = "api"
-  publish = "build"
+  publish = "_dist"
 
 [dev]
   framework = "#custom"
   command = "yarn serve"
   port = 3000
-  targetPort = 8080
-  publish = "build"
+  targetPort = 1234
+  publish = "_dist"
   autoLaunch = true
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

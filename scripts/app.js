@@ -2,10 +2,8 @@ import { picoapp } from 'picoapp'
 import { size, qs } from 'martha'
 
 import lazy from './components/lazy'
-import scroll from './components/scroll'
-import sticky from './components/sticky'
 
-const components = { lazy, scroll, sticky }
+const components = { lazy }
 
 const sizes = size()
 const state = {

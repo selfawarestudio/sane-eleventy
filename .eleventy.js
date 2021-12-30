@@ -1,16 +1,15 @@
-const cx = require('nanoclass')
 const blocksToHtml = require('@sanity/block-content-to-html')
 const htmlmin = require('html-minifier')
 const getSerializers = require('./lib/serializers')
 
-module.exports = (config) => {
-  config.setUseGitIgnore(false)
+module.exports = c => {
+  c.setUseGitIgnore(false)
 
-  config.addShortcode('classList', (...all) => cx(all))
+  c.addShortcode('classList', (...all) => all.filter(c => !!c).join(' '))
 
-  config.addShortcode(
+  c.addShortcode(
     'debug',
-    (value) =>
+    value =>
       `<pre style="padding: 100px 0; font-size: 14px; font-family: monospace;">${JSON.stringify(
         value,
         null,
@@ -18,7 +17,7 @@ module.exports = (config) => {
       )}</pre>`,
   )
 
-  config.addFilter('blocksToHtml', (blocks, type, theme) => {
+  c.addFilter('blocksToHtml', (blocks, type, theme) => {
     try {
       return blocksToHtml({
         blocks,
@@ -30,14 +29,17 @@ module.exports = (config) => {
     }
   })
 
-  config.addWatchTarget('./tailwind.config.js')
-  config.addWatchTarget('./lib')
-  config.addWatchTarget('./styles')
-  config.addWatchTarget('./scripts')
+  c.addWatchTarget('./assets')
+  c.addWatchTarget('./lib')
+  c.addWatchTarget('./scripts')
+  c.addWatchTarget('./styles')
+  c.addWatchTarget('./tailwind.config.js')
 
-  config.addPassthroughCopy({ './public': '/' })
+  c.addPassthroughCopy({ './assets': '/assets' })
+  c.addPassthroughCopy({ './scripts': '/scripts' })
+  c.addPassthroughCopy({ './styles': '/styles' })
 
-  config.addTransform('htmlmin', (content, outputPath) => {
+  c.addTransform('htmlmin', (content, outputPath) => {
     if (outputPath && outputPath.endsWith('.html')) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
@@ -56,8 +58,6 @@ module.exports = (config) => {
       input: 'templates',
       data: '../data',
       includes: 'includes',
-      layouts: 'layouts',
-      output: 'build',
     },
   }
 }

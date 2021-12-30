@@ -4,10 +4,10 @@
 
 @layer base {
   /* @font-face {
-    font-family: 'GT Walsheim';
-    src: url('/fonts/GTWalsheim-Regular.woff') format('woff'),
-      url('/fonts/GTWalsheim-Regular.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'Sneak';
+    src: url('../assets/fonts/Sneak-Regular.woff') format('woff'),
+      url('../assets/fonts/Sneak-Regular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
   } */
@@ -33,9 +33,8 @@
     overflow-x: hidden;
   }
 
-  [data-router-view] {
+  [a-page] {
     opacity: 0;
-    visibility: hidden;
   }
 }
 

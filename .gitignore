@@ -1,4 +1,14 @@
+# General
 node_modules
 .DS_Store
-build
+
+# Frontend
+_site
+_dist
+.parcel-cache
+
+# Sanity
 dist
+
+# Netlify
+.netlify
