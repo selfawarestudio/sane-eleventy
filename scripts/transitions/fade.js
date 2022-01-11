@@ -1,5 +1,5 @@
 import { animate } from 'motion'
-import { outQuart } from '../lib/ease'
+import ease from '../lib/ease'
 
 const fade = {
   async enter({ from, to }) {
@@ -10,7 +10,7 @@ const fade = {
       to,
       { opacity: [0, 1] },
       {
-        easing: outQuart,
+        easing: ease.outQuart,
         duration: 0.6,
       },
     ).finished
@@ -20,7 +20,7 @@ const fade = {
       from,
       { opacity: 0 },
       {
-        easing: outQuart,
+        easing: ease.outQuart,
         duration: 0.6,
       },
     ).finished
