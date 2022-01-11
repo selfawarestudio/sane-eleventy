@@ -5,22 +5,22 @@
   "scripts": {
     "serve:eleventy": "eleventy --watch --quiet",
     "build:eleventy": "eleventy",
-    "serve:parcel": "parcel './_site/index.html' './_site/**/*.html' --dist-dir _dist",
-    "build:parcel": "parcel build './_site/index.html' './_site/**/*.html' --dist-dir _dist --no-source-maps",
+    "serve:parcel": "parcel './_site/*.html' './_site/**/*.html' --dist-dir _dist",
+    "build:parcel": "parcel build './_site/*.html' './_site/**/*.html' --dist-dir _dist --no-source-maps --no-cache",
     "clean": "rimraf _site _dist",
     "serve": "NODE_ENV=development npm-run-all --serial clean build:eleventy --parallel serve:*",
     "build": "NODE_ENV=production run-s clean build:*",
     "dev": "netlify dev"
   },
   "dependencies": {
+    "alio": "^2.0.1",
     "choozy": "^1.0.0",
     "focus-visible": "^5.2.0",
     "fontfaceobserver": "^2.1.0",
-    "martha": "^3.0.3",
-    "motion": "^10.4.0",
+    "martha": "^4.0.4",
+    "motion": "^10.5.0",
     "picoapp": "^3.6.2",
-    "quicklink": "^2.2.0",
-    "smitter": "^0.0.4"
+    "quicklink": "^2.2.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",

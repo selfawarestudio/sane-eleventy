@@ -1,87 +1,40 @@
-import * as quicklink from 'quicklink'
+import 'focus-visible'
+import { listen } from 'quicklink'
 import { on, size } from 'martha'
-import { animate } from 'motion'
-import { aware } from './lib/aware'
+import { create } from 'alio'
 import app from './app'
+import raf from './lib/raf'
 import fonts from './lib/fonts'
+import fade from './transitions/fade'
 
 main()
 
 async function main() {
-  quicklink.listen()
+  listen()
 
   on(window, 'resize', resize)
   on(document, 'mousemove', mousemove)
+  raf(tick)
 
-  await fonts(app.getState().fonts)
+  await fonts([
+    // { family: 'Example' },
+    // { family: 'Example', options: { style: 'italic' } },
+    // { family: 'Example', options: { weight: 700 } },
+  ])
 
-  let pjax = aware({
+  const pjax = create({
     transitions: {
-      default: {
-        enter({ from, to }) {
-          window.scrollTo(0, 0)
-          from && from.remove()
-          return animate(to, { opacity: 1 }, { duration: 1 }).finished
-        },
-        leave({ from }) {
-          return animate(from, { opacity: 0 }, { duration: 1 }).finished
-        },
-      },
-      test: {
-        enter({ from, to, leaveCancelled }) {
-          window.scrollTo(0, 0)
-          from && from.remove()
-          return animate(
-            to,
-            { opacity: 1, x: leaveCancelled ? 0 : [-10, 0] },
-            { duration: 1 },
-          ).finished
-        },
-        leave({ from }) {
-          return animate(from, { opacity: 0, x: 10 }, { duration: 1 }).finished
-        },
-      },
+      default: fade,
     },
   })
 
   pjax.on('beforeLeave', () => {
-    console.log('beforeLeave')
     app.unmount()
   })
 
-  pjax.on('afterLeave', () => {
-    console.log('afterLeave')
-  })
-
   pjax.on('beforeEnter', () => {
-    console.log('beforeEnter')
-    resize()
     app.mount()
-  })
-
-  pjax.on('afterEnter', () => {
-    console.log('afterEnter')
-    console.log('---')
-  })
-
-  pjax.on('leaveCancelled', ({ from }) => {
-    animate(from, { x: 0 }, { duration: 1 })
-    console.log('---')
-    console.log('%cleaveCancelled', 'font-weight:700;color:blue;')
-  })
-
-  pjax.on('enterCancelled', () => {
-    console.log('---')
-    console.log('%centerCancelled', 'font-weight:700;color:blue;')
-  })
-
-  pjax.on('error', error => {
-    console.log('%cerror', 'font-weight:700;color:red;', error)
-  })
-
-  pjax.on('samePage', () => {
-    console.log('samePage')
-    console.log('---')
+    resize()
   })
 }
 
@@ -89,6 +42,10 @@ function resize() {
   app.emit('resize', size())
 }
 
-function mousemove({ x, y }) {
-  app.emit('mousemove', { mx: x, my: y })
+function mousemove(ev) {
+  app.emit('mousemove', { mouse: ev })
+}
+
+function tick(time, deltaTime, frame) {
+  app.emit('tick', { time, deltaTime, frame })
 }
